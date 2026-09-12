@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ali Ataollahi — formal methods, symbolic model checking, programming languages, and cyber-physical systems."
+    />
+    <meta name="theme-color" content="#f4f1e8" />
+    <meta property="og:title" content="Ali Ataollahi" />
+    <meta
+      property="og:description"
+      content="Research in formal verification, programming languages, and dependable systems."
+    />
+    <meta property="og:image" content="assets/ali-ataollahi.jpg" />
+    <title>Ali Ataollahi · Formal Methods</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Ali Ataollahi, home">
+        <span>AA</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#interests">Interests</a>
+        <a href="#teaching">Teaching</a>
+        <a class="nav-cv" href="assets/ali-ataollahi-cv.pdf" target="_blank" rel="noreferrer">CV</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Formal methods · Programming languages · CPS</p>
+          <h1>Ali<br />Ataollahi</h1>
+          <p class="hero-intro">
+            I build methods and tools for understanding complex systems—and for making their
+            correctness easier to establish as they evolve.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/ali-ataollahi-cv.pdf" target="_blank" rel="noreferrer">
+              Read my CV
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5m0 0H7m8 0v8" /></svg>
+            </a>
+            <a class="button button-quiet" href="https://www.youtube.com/@AliAtalh1" target="_blank" rel="noreferrer">
+              Teaching on YouTube
+            </a>
+          </div>
+        </div>
+
+        <div class="portrait-wrap reveal" data-delay="1">
+          <div class="portrait-frame">
+            <img
+              src="assets/ali-ataollahi.jpg"
+              alt="Portrait of Ali Ataollahi"
+              width="640"
+              height="640"
+              fetchpriority="high"
+            />
+          </div>
+          <div class="portrait-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            Tehran, Iran
+          </div>
+          <svg class="orbit" viewBox="0 0 170 170" aria-hidden="true">
+            <circle cx="85" cy="85" r="55" />
+            <circle cx="85" cy="30" r="4" />
+            <circle cx="132" cy="114" r="4" />
+            <path d="M85 30 132 114" />
+          </svg>
+        </div>
+      </section>
+
+      <section id="about" class="about section-shell ruled-section">
+        <div class="section-label reveal"><span>01</span> About</div>
+        <div class="about-copy reveal" data-delay="1">
+          <p class="lead">
+            My work sits where <em>formal verification</em>, programming languages, and
+            dependable systems meet.
+          </p>
+          <div class="body-columns">
+            <p>
+              I studied Computer Engineering at the University of Tehran, where I began
+              exploring how precise models can help us reason about software, hardware, and
+              cyber-physical systems.
+            </p>
+            <p>
+              I enjoy research that connects strong theory with working tools: finding the
+              right abstraction, shaping an algorithm around it, and testing the result on
+              systems that matter.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="research section-shell ruled-section">
+        <div class="section-label reveal"><span>02</span> Current focus</div>
+        <div class="section-heading reveal" data-delay="1">
+          <h2>Research for systems<br />that do not stand still.</h2>
+          <p>
+            I am especially interested in verification techniques that remain useful when
+            systems, models, and requirements change.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-card-featured reveal">
+            <div class="project-index">A</div>
+            <div>
+              <p class="project-kicker">Primary research direction</p>
+              <h3>Adaptive Programming</h3>
+              <p>
+                Exploring how focused models and verification knowledge can be reused as
+                software evolves, with an emphasis on dependable timed and actor-based systems.
+              </p>
+              <div class="tag-row" aria-label="Topics">
+                <span>Program analysis</span>
+                <span>Model evolution</span>
+                <span>Behavioral equivalence</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card-featured reveal" data-delay="1">
+            <div class="project-index">B</div>
+            <div>
+              <p class="project-kicker">Primary research direction</p>
+              <h3>Extending MoXIchecker</h3>
+              <p>
+                Contributing to a broader and more versatile platform for symbolic model
+                checking, shared representations, and reproducible verification experiments.
+              </p>
+              <div class="tag-row" aria-label="Topics">
+                <span>Symbolic model checking</span>
+                <span>SMT</span>
+                <span>Verification tools</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="research-thread reveal">
+          <p class="thread-title">A broader research thread</p>
+          <div class="thread-items">
+            <div>
+              <span>01</span>
+              <h3>Cyber-physical systems</h3>
+              <p>Formal models for systems that combine discrete decisions and physical behavior.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <h3>Abstraction & analysis</h3>
+              <p>Smaller representations that preserve the behavior relevant to verification.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <h3>Languages & semantics</h3>
+              <p>Using language design and precise semantics as a bridge to reliable systems.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="interests" class="interests section-shell ruled-section">
+        <div class="section-label reveal"><span>03</span> Interests & skills</div>
+        <div class="interest-layout">
+          <div class="favorites reveal">
+            <p class="eyebrow">What I like working on</p>
+            <ul class="favorite-list">
+              <li><span>01</span>Finding small, useful abstractions for complex systems</li>
+              <li><span>02</span>Building research tools alongside formal arguments</li>
+              <li><span>03</span>Connecting programming languages with verification</li>
+              <li><span>04</span>Explaining difficult ideas in a clear, teachable way</li>
+            </ul>
+          </div>
+
+          <div class="skills reveal" data-delay="1">
+            <div class="skill-group">
+              <p>Verification</p>
+              <div class="skill-cloud">
+                <span>Symbolic model checking</span><span>Reachability</span><span>Abstraction</span>
+                <span>Theorem proving</span><span>Static analysis</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p>Foundations</p>
+              <div class="skill-cloud">
+                <span>Transition systems</span><span>Process algebra</span><span>Actor models</span>
+                <span>Behavioral equivalence</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p>Languages & tools</p>
+              <div class="skill-cloud">
+                <span>C / C++</span><span>Python</span><span>Java</span><span>Scala</span>
+                <span>Z3</span><span>Isabelle/HOL</span><span>Coq</span><span>ANTLR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="teaching" class="teaching section-shell ruled-section">
+        <div class="section-label reveal"><span>04</span> Teaching</div>
+        <div class="teaching-card reveal" data-delay="1">
+          <div>
+            <p class="eyebrow">Compiler design tutorial series</p>
+            <h2>I learn deeply<br />by teaching clearly.</h2>
+          </div>
+          <div class="teaching-copy">
+            <p>
+              My teaching grew from work as a head teaching assistant in compiler and
+              programming-language design. I create tutorials that make language implementation
+              and its underlying ideas easier to approach.
+            </p>
+            <a href="https://www.youtube.com/@AliAtalh1" target="_blank" rel="noreferrer">
+              Visit my YouTube channel
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5m0 0H7m8 0v8" /></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <div>
+        <p class="footer-name">Ali Ataollahi</p>
+        <p>Formal methods, precise models, dependable systems.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:aliataollahi7@gmail.com">Email</a>
+        <a href="https://github.com/AliAtaollahi" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.youtube.com/@AliAtalh1" target="_blank" rel="noreferrer">YouTube</a>
+      </div>
+      <p class="copyright">© <span data-year></span></p>
+    </footer>
+  </body>
+</html>
