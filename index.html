@@ -17,6 +17,7 @@
     <title>About me - Ali Ataollahi</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -30,20 +31,25 @@
 
     <div class="page-layout">
       <aside class="profile" aria-label="Profile">
-        <img
-          class="profile-photo"
-          src="assets/ali-ataollahi.jpg"
-          alt="Portrait of Ali Ataollahi"
-          width="640"
-          height="640"
-        />
+        <div class="profile-photo">
+          <img
+            src="assets/ali-ataollahi.jpg"
+            alt="Portrait of Ali Ataollahi"
+            width="640"
+            height="640"
+          />
+        </div>
 
         <div class="profile-heading">
           <h2>Ali Ataollahi</h2>
           <p>Formal Methods Researcher</p>
         </div>
 
-        <ul class="profile-links">
+        <div class="profile-links-wrap">
+          <button class="profile-toggle" type="button" aria-expanded="false" aria-controls="profile-links">
+            Follow
+          </button>
+          <ul id="profile-links" class="profile-links">
           <li>
             <span class="icon" aria-hidden="true">
               <svg viewBox="0 0 16 16"><path d="M8 15s5-4.7 5-9A5 5 0 0 0 3 6c0 4.3 5 9 5 9Z"/><circle cx="8" cy="6" r="1.7"/></svg>
@@ -69,7 +75,7 @@
               <span class="icon icon-fill" aria-hidden="true">
                 <svg viewBox="0 0 16 16"><path d="M8 .8a7.4 7.4 0 0 0-2.3 14.4c.4.1.5-.2.5-.4v-1.5c-2.2.5-2.7-.9-2.7-.9-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.8.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-3.9 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8A7.4 7.4 0 0 1 8 3.5c.7 0 1.3.1 2 .3 1.5-1 2.2-.8 2.2-.8.5 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3-1.8 3.7-3.6 3.9.3.3.6.8.6 1.5v2.2c0 .2.1.5.6.4A7.4 7.4 0 0 0 8 .8Z"/></svg>
               </span>
-              Github
+              GitHub
             </a>
           </li>
           <li>
@@ -80,15 +86,16 @@
               YouTube
             </a>
           </li>
-        </ul>
+          </ul>
+        </div>
       </aside>
 
       <main id="main-content" class="page-content">
         <h1>Welcome to my personal website!</h1>
 
         <p class="intro">
-          My research focuses on formal verification, symbolic model checking, programming
-          languages, and dependable cyber-physical systems.
+          I work on adaptive verification and symbolic model checking for evolving software,
+          hardware, and cyber-physical systems.
         </p>
 
         <section>
@@ -96,13 +103,14 @@
           <p>
             I am a Computer Engineering graduate from the
             <a href="https://ece.ut.ac.ir/en/" target="_blank" rel="noreferrer">University of Tehran</a>.
-            My work connects programming languages, formal models, and systems, with the goal
-            of making complex software and cyber-physical systems easier to understand and verify.
+            My research lies at the intersection of programming languages, formal models, and
+            dependable systems. I am interested in techniques that turn precise theory into
+            practical verification tools.
           </p>
           <p>
-            I enjoy research that combines mathematical foundations with practical tools. My
-            experience includes actor-based modeling, symbolic model checking, reachability
-            analysis, behavioral equivalence, static analysis, and theorem proving.
+            My current work includes adaptive programming with Marjan Sirjani and collaborators,
+            and extending MoXIchecker with Dirk Beyer and the SoSy-Lab team. Across these projects,
+            I study how verification can scale and remain useful as systems change.
           </p>
 
           <p>Here is my:</p>
@@ -116,23 +124,28 @@
 
           <h3>Adaptive Programming</h3>
           <p>
-            My main research interest is helping verification results remain useful as programs
-            and models evolve. This work brings together program analysis, model evolution,
-            timed actor systems, and behavioral equivalence.
+            Studying how models and verification results can be reused as programs evolve, with
+            a focus on program analysis, timed actor systems, and behavioral equivalence.
           </p>
 
           <h3>Extending MoXIchecker</h3>
           <p>
             I contribute to extending
             <a href="https://gitlab.com/sosy-lab/software/moxichecker" target="_blank" rel="noreferrer">MoXIchecker</a>
-            as a versatile platform for symbolic model checking. I am particularly interested in
-            verification algorithms, common modeling formats, and careful experimental evaluation.
+            as a versatile platform for symbolic model checking, common modeling formats, and
+            reproducible verification experiments.
           </p>
 
           <h3>Other Research</h3>
           <ul>
-            <li>Reachability analysis for actor-based cyber-physical systems.</li>
-            <li>Model abstraction and merging for families of related systems.</li>
+            <li>
+              <a href="https://www.sciencedirect.com/science/article/pii/S1383762125001651" target="_blank" rel="noreferrer">Reachability analysis of Hybrid Rebeca models</a>
+              for actor-based cyber-physical systems.
+            </li>
+            <li>
+              <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.172564184.44283996/v1" target="_blank" rel="noreferrer">Generalizing Featured Finite State Machines</a>
+              through model merging.
+            </li>
             <li>Formal modeling and verification of security-critical software.</li>
           </ul>
         </section>
@@ -149,7 +162,7 @@
         </section>
 
         <section>
-          <h2>Favorite Problems</h2>
+          <h2>What I Enjoy Working On</h2>
           <ul>
             <li>Finding small and useful abstractions for complex systems.</li>
             <li>Reusing verification knowledge instead of starting again after every change.</li>
