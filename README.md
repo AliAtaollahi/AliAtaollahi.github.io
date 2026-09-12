@@ -1,7 +1,8 @@
 # Ali Ataollahi — Personal Website
 
 A lightweight personal academic website focused on formal methods, programming languages,
-and dependable cyber-physical systems.
+and dependable cyber-physical systems. Its typography and profile/content layout are inspired
+by the Academic Pages style used by Nian-Ze Lee's website.
 
 ## Preview locally
 
